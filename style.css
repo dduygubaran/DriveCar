@@ -2,7 +2,7 @@
 body {
     margin: 0;
     background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-    overflow-y: hidden; /* scroller gizle*/
+    overflow-y: hidden;
 }
 
 .night {
@@ -10,10 +10,10 @@ body {
     width: 70vw;
     margin: 5rem auto;
     background-image: url('./assets/Img_1.png');
-    background-size: cover; /*kapla*/
-    position: relative; /*absolute path kullanabilmek için*/
+    background-size: cover; 
+    position: relative; 
     box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
-    overflow-x: hidden; /*container rectangle'ın dışına çıkmaması için*/
+    overflow-x: hidden; 
 }
 
 .surface {
@@ -22,34 +22,9 @@ body {
     background-image: url('./assets/Img_02.png');
     display: block;
     position: absolute;
-    /* Örneğin; Floating özelliğinde  nesneler hep birbiri ardına gelerek kendilerine bir konum oluştururlar. 
-       float:left; dediğimizde sol tarafa doğru birbiri ardına gelirler.
-       Nesnelerin bu şekilde birbirinden etkilenerek sayfa üzerinde konumlanmasına html etiketlerinin normal akış davranışı denir.
-       Biz her zaman normal akış içinde davranmak istemeyiz. Örneğin bir nesneyi sayfa üzerindeki diğer nesnelerden bağımsız olarak 
-       başka bir konuma getirmek isteyebiliriz ya da bir <div> etiketini sayfanın bir konumunda sabitleyerek durmasını isteyebiliriz.
-       Bu gibi durumlarda css position özelliğini kullanmalıyız.
-       Position : static | relative | fixed | absolute | sticky
-
-       Html etiketleri varsayılan olarak static biçimde davranış gösterirler. 
-       Yani normal akış içinde birbirlerinden etkilenerek davranış gösterirler. 
-       Static nesneler için top, right, bottom ve left konumlandırma özellikleri kullanılamaz.
-
-       position:relative; top:50px kullanımı; nesne yukarıdan yani olduğu konumdan itibaren 50px aşağıya iner. 
-       Ancak sonrasında gelen elemanları aşağıya itmediğine ve mevcut konumundan itibaren 50px aşağıya indiğine dikkat ediniz.
-
-       Bir nesnenin position özelliğini absolute yaptığımızda o nesne normal akış içinden çıkar ayrıca 4 köşeden 
-       konumlandırma yapmamızı sağlar. 
-       Relative ile Absolute nesnelerin farkı normal akış içinde olup olmadığı farkıdır.
-*/
-    bottom: 0%; /*resmi aşağıya konumlandırma*/
+    bottom: 0%; 
     left: 0%;
     background-repeat: repeat-x;
-    /*repeat	Görseli yatay ve dikey olarak tekrarlar.
-    repeat-x	Görseli sadece yatak olarak tekrarlar.
-    repeat-y	Görseli sadece dikey olarak tekrarlar.
-    no-repeat	Görseli tekrarlamaz.
-    */
-   /* animation: moveRight 6s linear infinite ; animation class'a atandı - Arka taraftaki palmiyeler hareket etmektedir. */
 }
 
 .car {
@@ -69,20 +44,20 @@ body {
 
 @keyframes suspension {
     100%{
-        transform: translateY(-1px); /* araba tekeri yukarıya hareket ettirmek*/
+        transform: translateY(-1px); 
     }
  
     50%{
-        transform: translateY(2px) ; /* araba tekeri aşağıya hareket ettirmek*/
+        transform: translateY(2px) ; 
     }
 
     0%{
-        transform: translateY(-1px); /* araba tekeri yukarıya hareket ettirmek*/
+        transform: translateY(-1px);
     }  
 }
 
 .moveRight {
-    animation: moveRight 6s linear infinite ; /*animation class'a atandı - Arka taraftaki palmiyeler hareket etmektedir. */
+    animation: moveRight 6s linear infinite ;
 }
 
 .suspension {
